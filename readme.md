@@ -1,5 +1,4 @@
-# Fully Auto Regression Test Suite (FARTs)
-v. 0.3.0
+# WebdriverIO Boilerplate
 
 ### Setup
 
