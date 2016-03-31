@@ -1,0 +1,8 @@
+{ "extends": "emma",
+
+  rules: {
+    "prefer-reflect": [0],
+    "no-warning-comments": [0],
+    "arrow-body-style": [0]
+  }
+}
