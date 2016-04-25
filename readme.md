@@ -6,7 +6,6 @@
 
 This project is an example of how to get started with Webdriverio for Selenium testing in Node.js. It makes use of the Cucumber BDD framework and works with dot, junit, and allure reporters.  It is ES6 friendly (via babel-register) and uses Grunt to manage tasks.
 
-
 ### Setup
 
 This project currently supports ***Node 4.2.4*** and up.  While earlier versions of node may be compatible, they have not been tested or verified.
