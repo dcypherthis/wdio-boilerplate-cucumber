@@ -1,7 +1,11 @@
 {
-  "name": "wdio-boilerplate",
+  "name": "wdio-boilerplate-cucumber",
   "version": "1.0.0",
   "description": "Everything you need to get started with selenium tests in node.js.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dcypherthis/wdio-boilerplate-cucumber.git"
+    },
   "main": "wdio.conf.js",
   "scripts": {
       "postinstall": "node_modules/.bin/selenium-standalone install",
