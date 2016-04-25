@@ -1,8 +1,11 @@
-{ "extends": "emma",
-
-  rules: {
-    "prefer-reflect": [0],
-    "no-warning-comments": [0],
-    "arrow-body-style": [0]
-  }
+{
+    rules: {
+        "prefer-reflect": [0],
+        "no-warning-comments": [0],
+        "arrow-body-style": [0],
+        "new-cap": [0],
+        "no-unused-vars": [0],
+        "no-undef": [0],
+        "key-spacing": [0]
+    }
 }

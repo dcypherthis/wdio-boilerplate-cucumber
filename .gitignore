@@ -196,3 +196,9 @@ Temporary Items
 
 ### WebdriverIO template
 test/reports
+.idea
+test/reports/errorShots
+test/reports/allure-results
+
+
+allure-report/

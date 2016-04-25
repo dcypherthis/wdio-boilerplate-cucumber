@@ -4,13 +4,10 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         webdriver: {
             test: {
-                configFile: './suite.conf.js'
-            },
-            dev: {
-                configFile: './dev.conf.js'
+                configFile: './test/config/suite.conf.js'
             },
             prod: {
-                configFile: './prod.conf.js'
+                configFile: './test/config/prod.conf.js'
             }
         },
         cucumberjs: {
