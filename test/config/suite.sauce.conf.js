@@ -42,48 +42,48 @@ exports.config = {
     // from the same test should run tests.
     //
     capabilities: [
-        // {
-        //     browserName: 'firefox',
-        //     platform: 'Windows 10',
-        //     version: '45.0',
-        //     maxInstances: '1'
-        // },
         {
             browserName: 'firefox',
-            // platform: 'OS X 10.11',
-            // version: '45.0',
+            platform: 'Windows 10',
+            version: '45.0',
             maxInstances: '1',
         },
-        // {
-        //     browserName: 'Chrome',
-        //     platform: 'Windows 10',
-        //     version: '50.0',
-        //     maxInstances: '1'
-        // },
-        // {
-        //     browserName: 'Chrome',
-        //     platform: 'OS X 10.11',
-        //     version: '48.0',
-        //     maxInstances: '1'
-        // },
-        // {
-        //     browserName: 'MicrosoftEdge',
-        //     platform: 'Windows 10',
-        //     version: '13.10586',
-        //     maxInstances: '1'
-        // },
-        // {
-        //     browserName: 'Internet Explorer',
-        //     platform: 'Windows 10',
-        //     version: '11.103',
-        //     maxInstances: '1'
-        // },
-        // {
-        //     browserName: 'Safari',
-        //     platform: 'OS X 10.11',
-        //     version: '9',
-        //     maxInstances: '1'
-        // }
+        {
+            browserName: 'firefox',
+            platform: 'OS X 10.11',
+            version: '45.0',
+            maxInstances: '1',
+        },
+        {
+            browserName: 'Chrome',
+            platform: 'Windows 10',
+            version: '50.0',
+            maxInstances: '1',
+        },
+        {
+            browserName: 'Chrome',
+            platform: 'OS X 10.11',
+            version: '48.0',
+            maxInstances: '1',
+        },
+        {
+            browserName: 'MicrosoftEdge',
+            platform: 'Windows 10',
+            version: '13.10586',
+            maxInstances: '1',
+        },
+        {
+            browserName: 'Internet Explorer',
+            platform: 'Windows 10',
+            version: '11.103',
+            maxInstances: '1',
+        },
+        {
+            browserName: 'Safari',
+            platform: 'OS X 10.11',
+            version: '9',
+            maxInstances: '1',
+        },
     ],
     //
     // ===================
@@ -142,7 +142,9 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['sauce'],
-
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
+    sauceConnect: true,
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

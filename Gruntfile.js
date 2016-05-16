@@ -6,6 +6,9 @@ module.exports = function(grunt) {
             test: {
                 configFile: './test/config/suite.conf.js'
             },
+            testSauce: {
+                configFile: './test/config/suite.sauce.conf.js'
+            },
             prod: {
                 configFile: './test/config/prod.conf.js'
             }
