@@ -176,6 +176,9 @@ exports.config = {
         allure: {
             outputDir: './test/reports/allure-results/',
         },
+        junit: {
+            outputDir: './test/reports/junit/',
+        },
     },
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
