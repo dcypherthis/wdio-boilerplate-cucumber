@@ -1,6 +1,6 @@
 # WebdriverIO Boilerplate -  Cucumber
 
-*v 1.1.0*
+*v 2.0.0*
 
 ## Overview
 

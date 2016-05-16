@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.0.0
+
+- Adds Travis CI Integration
+
 ### 1.1.0
 
 - Update dependencies to latest version
