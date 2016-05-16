@@ -1,5 +1,7 @@
 # WebdriverIO Boilerplate -  Cucumber
 
+[![Build Status](https://travis-ci.org/dcypherthis/wdio-boilerplate-cucumber.svg?branch=master)](https://travis-ci.org/dcypherthis/wdio-boilerplate-cucumber)
+
 *v 2.0.0*
 
 ## Overview
