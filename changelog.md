@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.0.2
+
+- fix CI variables
+- fix saucelabs config so sauce connect will start properly
+
 ### 2.0.1
 
 - Update docs for correct test runner commands.

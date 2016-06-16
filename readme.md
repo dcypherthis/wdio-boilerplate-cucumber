@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dcypherthis/wdio-boilerplate-cucumber.svg?branch=master)](https://travis-ci.org/dcypherthis/wdio-boilerplate-cucumber)
 
-*v 2.0.1*
+*v 2.0.2*
 
 ## Overview
 
