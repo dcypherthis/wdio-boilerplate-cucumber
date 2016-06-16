@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.0.1
+
+- Update docs for correct test runner commands.
+- Clean up then steps
+- upgrade/organize dependencies
+
 ### 2.0.0
 
 - Adds Travis CI Integration

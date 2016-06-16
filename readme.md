@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dcypherthis/wdio-boilerplate-cucumber.svg?branch=master)](https://travis-ci.org/dcypherthis/wdio-boilerplate-cucumber)
 
-*v 2.0.0*
+*v 2.0.1*
 
 ## Overview
 
@@ -63,8 +63,6 @@ You may want to execute tests against multiple browsers at the same time.  The p
 Selenium grids are used to test applications in parallel across many browsers. In the past, VM provisioning was difficult and time consuming, so we would provision super boxes with large amounts of memory that could have dozens of nodes.  Docker has main this provisioning process nearly painless and exponentially cheaper, so we no longer need larger instances with dozens of nodes, but can now leverage dozens of smaller instances with a couple of nodes each. This allows us to fine tune each grid to use an optimum amount of memory and CPU. Each Grid consists of a hub and at least 2 nodes (firefox + chrome). These execute a single test in parallel for that particular grid. Since WebdriverIO fires off a child process for each test, we can run them all in parallel but launching an appropriate number of grids.
 
 ### Run Some Tests
-
-For local development, execute tests with `grunt webdriver:dev`.  This will reference the dev.conf.js file and use a dot reporter, and execute tests located in the `/tests/devFeatures/` directory. You can place feature files here while working on automation steps to isolate them from the rest of the suite.
 
 To execute the entire test suite in local development, use `grunt webdriver:test`.  This executes all features in the `/test/features` directory with a dot reporter by default and references the `suite.conf.js` file.
 

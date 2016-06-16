@@ -1,25 +1,25 @@
 {
   "name": "wdio-boilerplate-cucumber",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Everything you need to get started with selenium tests in node.js.",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dcypherthis/wdio-boilerplate-cucumber.git"
-    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcypherthis/wdio-boilerplate-cucumber.git"
+  },
   "main": "wdio.conf.js",
   "scripts": {
-      "postinstall": "node_modules/.bin/selenium-standalone install",
-      "lint": "node_modules/.bin/eslint test/**/*.js",
-      "test": "node_modules/.bin/wdio test/config/suite.sauce.conf.js",
-      "selenium": "node_modules/.bin/selenium-standalone start",
-      "report": "node_modules/.bin/allure generate test/reports/allure-results/ && allure report"
+    "postinstall": "node_modules/.bin/selenium-standalone install",
+    "lint": "node_modules/.bin/eslint test/**/*.js",
+    "test": "node_modules/.bin/wdio test/config/suite.sauce.conf.js",
+    "selenium": "node_modules/.bin/selenium-standalone start",
+    "report": "node_modules/.bin/allure generate test/reports/allure-results/ && allure report"
   },
   "keywords": [
-      "test",
-      "automation",
-      "selenium",
-      "webdriver",
-      "webdriverIO"
+    "test",
+    "automation",
+    "selenium",
+    "webdriver",
+    "webdriverIO"
   ],
   "author": "Josh Cypher <joshua.cypher@me.com>",
   "license": "MIT",
@@ -29,11 +29,12 @@
         "babel-register": "^6.3.13",
         "chai": "3.5.0",
         "chai-as-promised": "5.3.0",
-        "mocha": "2.4.5",
-        "wdio-cucumber-framework": "0.0.6",
-        "webdriverio": "^4.0.7",
+        "cucumber": "^0.10.4",
         "grunt": "^0.4.5",
         "grunt-webdriver": "^1.0.0",
+        "node-uuid": "^1.4.7",
+        "wdio-cucumber-framework": "0.1.0",
+        "webdriverio": "4.0.9",
         "wdio-allure-reporter": "0.0.2",
         "wdio-dot-reporter": "0.0.5",
         "wdio-junit-reporter": "0.0.2",
@@ -45,8 +46,7 @@
         "eslint-plugin-react": "^3.16.1",
         "grunt-cli": "^0.1.13",
         "grunt-cucumberjs": "^0.8.7",
-        "phantomjs-prebuilt": "^2.1.7",
-        "selenium-standalone": "^5.1.0",
-        "chromedriver": "^2.21.2"
+        "node-uuid": "^1.4.7",
+        "selenium-standalone": "^5.1.1"
     }
 }
