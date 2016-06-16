@@ -10,7 +10,7 @@
   "scripts": {
     "postinstall": "node_modules/.bin/selenium-standalone install",
     "lint": "node_modules/.bin/eslint test/**/*.js",
-    "test": "node_modules/.bin/wdio test/config/suite.sauce.conf.js",
+    "test": "node_modules/.bin/wdio test/config/prod.conf.js",
     "selenium": "node_modules/.bin/selenium-standalone start",
     "report": "node_modules/.bin/allure generate test/reports/allure-results/ && allure report"
   },

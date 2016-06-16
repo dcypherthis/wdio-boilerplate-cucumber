@@ -41,14 +41,63 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    capabilities: [{
-        browserName: 'firefox',
-        maxInstances: '1'
-    }
+    capabilities: [
+        {
+            browserName: 'firefox',
+            platform: 'Windows 10',
+            version: '45.0',
+            'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+            build: process.env.TRAVIS_BUILD_NUMBER,
+            maxInstances: '1',
+        },
         // {
-        //     browserName: 'chrome',
-        //     maxInstances: '1'
-        // }
+        //     browserName: 'firefox',
+        //     platform: 'OS X 10.11',
+        //     version: '45.0',
+        //     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        //     build: process.env.TRAVIS_BUILD_NUMBER,
+        //     maxInstances: '1',
+        // },
+        // {
+        //     browserName: 'Chrome',
+        //     platform: 'Windows 10',
+        //     version: '50.0',
+        //     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        //     build: process.env.TRAVIS_BUILD_NUMBER,
+        //     maxInstances: '1',
+        // },
+        // {
+        //     browserName: 'Chrome',
+        //     platform: 'OS X 10.11',
+        //     version: '48.0',
+        //     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        //     build: process.env.TRAVIS_BUILD_NUMBER,
+        //     maxInstances: '1',
+        // },
+        // {
+        //     browserName: 'MicrosoftEdge',
+        //     platform: 'Windows 10',
+        //     version: '13.10586',
+        //     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        //     build: process.env.TRAVIS_BUILD_NUMBER,
+        //     maxInstances: '1',
+        // },
+        // {
+        //     browserName: 'Internet Explorer',
+        //     platform: 'Windows 10',
+        //     version: '11.103',
+        //     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        //     build: process.env.TRAVIS_BUILD_NUMBER,
+        //     maxInstances: '1',
+        // },
+        // {
+        //     browserName: 'Safari',
+        //     platform: 'OS X 10.11',
+        //     version: '9',
+        //     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        //     build: process.env.TRAVIS_BUILD_NUMBER,
+        //     maxInstances: '1',
+        // },
     ],
     //
     // ===================
@@ -107,6 +156,8 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['sauce'],
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -135,7 +186,7 @@ exports.config = {
         format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
         colors: true,       // <boolean> disable colors in formatter output
         snippets: true,     // <boolean> hide step definition snippets for pending steps
-        source: true,       // <boolean> hide source uris
+        source: false,       // <boolean> hide source uris
         profile: [],        // <string[]> (name) specify the profile to use
         strict: false,      // <boolean> fail if there are any undefined or pending steps
         tags: [],
