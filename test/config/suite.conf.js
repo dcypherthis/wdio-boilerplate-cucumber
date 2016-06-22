@@ -7,8 +7,8 @@ exports.config = {
     //docker to run selenium.  Leave this alone if you are using selenium-standalone from
     //your node modules or from a different location on your local machine.
     //
-    //host: '192.168.99.100',
-    //port: '4444',
+    // host: '192.168.99.100',
+    // port: '4444',
     //
     // ==================
     // Specify Test Files
@@ -48,18 +48,18 @@ exports.config = {
         //     version: '45.0',
         //     maxInstances: '1'
         // },
+        // {
+            // browserName: 'firefox',
+            // // platform: 'OS X 10.11',
+            // // version: '45.0',
+            // maxInstances: '1',
+        // },
         {
-            browserName: 'firefox',
-            // platform: 'OS X 10.11',
-            // version: '45.0',
+            browserName: 'chrome',
+            // platform: 'Windows 10',
+            // version: '50.0',
             maxInstances: '1',
         },
-        // {
-        //     browserName: 'Chrome',
-        //     platform: 'Windows 10',
-        //     version: '50.0',
-        //     maxInstances: '1'
-        // },
         // {
         //     browserName: 'Chrome',
         //     platform: 'OS X 10.11',
@@ -110,7 +110,7 @@ exports.config = {
     baseUrl: 'https://app.e2ma.net/app2/login/',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 90000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
@@ -170,13 +170,13 @@ exports.config = {
         failFast: false,    // <boolean> abort the run on first failure
         format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
         colors: true,       // <boolean> disable colors in formatter output
-        snippets: true,     // <boolean> hide step definition snippets for pending steps
-        source: true,       // <boolean> hide source uris
+        snippets: false,     // <boolean> hide step definition snippets for pending steps
+        source: false,       // <boolean> hide source uris
         profile: [],        // <string[]> (name) specify the profile to use
         strict: false,      // <boolean> fail if there are any undefined or pending steps
         tags: [],
         // ['@only', '@isolate'], // <string[]> (expression) only execute the features or scenarios with tags matching the expression
-        timeout: 20000,     // <number> timeout for step definitions
+        timeout: 60000,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
 
