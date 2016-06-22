@@ -16,7 +16,6 @@ deploy:
   bucket: dcypherthis-test-reports
   local-dir: test/reports/
   upload-dir: travis-builds
-  acl: ''
   on:
     repo: dcypherthis/wdio-boilerplate-cucumber
     branch: feature/s3-reports-upload
