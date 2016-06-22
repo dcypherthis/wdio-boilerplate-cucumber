@@ -111,13 +111,13 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'verbose',
+    logLevel: 'error',
     //
     // Enables colors for log output.
     coloredLogs: true,
     //
     // Saves a screenshot to a given path if a command fails.
-    screenshotPath: '.test/reports/errorShots/',
+    screenshotPath: './reports/errorShots/',
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
@@ -170,10 +170,10 @@ exports.config = {
     // Test reporter for stdout.
     // The following are supported: dot (default), spec, and xunit
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporters: ['dot', 'allure'],
+    reporters: ['dot', 'json'],
     reporterOptions: {
-        allure: {
-            outputDir: './test/reports/allure-results/'
+        json: {
+            outputDir: './reports/json/'
         }
     },
     // If you are using Cucumber you need to specify the location of your step definitions.

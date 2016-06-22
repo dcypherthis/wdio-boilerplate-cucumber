@@ -15,7 +15,7 @@ deploy:
     secure: qkxF1mfpNFXPaEsGleevYqN8cD+wPEYxx4VavMhB6YVWbvW4T9xCiYdZPGitauuHU4IZPt2ILPe26kPpB2B6Af7eFJXSHAEBNShSJRIE2Itg/XlDFNIpEE+ZL33vnQL1bB3UPV6WFwOs1mmJgHxd5N5kyFpnjrBPqzTF5HX3yWO2cIOuHRvQQB9bFPxL8tCDXAmEjS0zZpMs7LhIZ4x4WOV27lSzaFvBP5Vh/Ge/hekS/LwDYcmNS2aetFmRFQTRNGM5LvmFgKD4xbF5vOSE5KnNhZF+qd6ujXRX5hLpakf6AH28Q9zKWltls7BCcQxVewEWpHu5tKHUrgh+sWcEjUv+w/YQ/yQvv1/2wj6RHFzcqbV4GTqB+i4X/U8yJRbSFdzoeUwHyFaLJ8fVsmTHwIh+kf6lay87bkqf/PJ0nDzWdjBOaY6HIQ/ngWaQgi+RRcHsJvlZ3LjT4vwzhY7EQeLlL139xutfCbX9GmdCpHiz0V82myS1ZB8JsUPAcrormoPvht7h/5dW9FUrJUDrBUMuDpx1aNuMzdYQQUvvZPPzA99L1yK6PIgpg7nXj5rqIqy/N9Py34JycYgBQeJYuHWkzDF9ZiTapkfviGYyQZ25rmvbps/BRO87OavpeuzRJczeEKdSgeKCh+6twgs16CWmVF1hqziIKTdKnRoKx0U=
   bucket: dcypherthis-test-reports
   skip_cleanup: true
-  local-dir: /test/reports/
+  local-dir: ./reports/
   upload-dir: travis-builds
   on:
     repo: dcypherthis/wdio-boilerplate-cucumber

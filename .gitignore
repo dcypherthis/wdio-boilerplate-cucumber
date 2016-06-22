@@ -104,8 +104,8 @@ node_modules
 
 .idea
 #test/reports
-test/reports/errorShots
-test/reports/allure-results/
-test/reports/junit/
+reports/errorShots
+reports/allure-results/
+reports/junit/
 
 allure-report/
