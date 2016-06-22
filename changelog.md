@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.0.3
+- Fine Tune suite.conf.js settings for ideal dev workflow
+
 ### 2.0.2
 
 - fix CI variables

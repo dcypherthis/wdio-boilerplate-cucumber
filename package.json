@@ -1,6 +1,6 @@
 {
   "name": "wdio-boilerplate-cucumber",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Everything you need to get started with selenium tests in node.js.",
   "repository": {
     "type": "git",
