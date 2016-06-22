@@ -24,6 +24,8 @@ To take full advantage of the command line and use grunt tasks you will need to 
 
 Now let's get a selenium selenium server up and running. You **MUST** have selenium running to execute any webdriverIO tests, or it will fail fast with an error.
 
+Before you can use the included selenium-standlone package, you need to run the install script.  PM only pulls down the package but does not extract it, so you must do it manually with `npm run selenium-install`.
+
 For development, you can run `npm run selenium`.  That's all there is to it.!
 
 Selenium is very taxing on memory and CPU and will you may need to kill it.  Assuming you do not have any other java processes running, you can use `pkill java` to terminate it. For a less invasive approach you can find the process with `lsof -i tcp:4444` and then terminate that specific process by PID.

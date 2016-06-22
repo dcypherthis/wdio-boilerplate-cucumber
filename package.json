@@ -8,7 +8,7 @@
   },
   "main": "wdio.conf.js",
   "scripts": {
-    "postinstall": "node_modules/.bin/selenium-standalone install",
+    "selenium-install": "node_modules/.bin/selenium-standalone install",
     "lint": "node_modules/.bin/eslint test/**/*.js",
     "test": "node_modules/.bin/wdio test/config/prod.conf.js",
     "selenium": "node_modules/.bin/selenium-standalone start",
