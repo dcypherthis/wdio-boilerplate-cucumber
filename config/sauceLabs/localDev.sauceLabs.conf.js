@@ -53,9 +53,9 @@ const sauceConf = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
-    reporters: ['dot'],
+    reporters: ['dot', 'spec'],
     cucumberOpts: {
-        require: ['./test/stepDefinitions/'],
+        require: ['./stepDefinitions/'],
     },
 };
 exports.config = merge(masterConf.config, sauceConf);

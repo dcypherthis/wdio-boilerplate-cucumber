@@ -68,7 +68,7 @@ const ciConf = {
         },
     },
     cucumberOpts: {
-        require: ['./test/stepDefinitions/'],
+        require: ['./stepDefinitions/'],
     },
 };
 exports.config = merge(masterConf.config, ciConf);
