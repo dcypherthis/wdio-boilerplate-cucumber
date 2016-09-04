@@ -8,11 +8,15 @@
     },
     "main": "wdio.conf.js",
     "scripts": {
-        "postinstall": "node_modules/.bin/selenium-standalone install",
+        "postinstall": "selenium-standalone install",
         "cucumber": "cucumberjs test/features/ -r test/stepDefinitions",
         "lint": "eslint ./*",
-        "selenium": "node_modules/.bin/selenium-standalone start",
-        "test": "node_modules/.bin/wdio test/config/prod.conf.js"
+        "selenium": "selenium-standalone start",
+        "test": "wdio config/ci/travis.conf.js",
+        "test-local-dev": "wdio config/local/localDev.conf.js",
+        "test-local": "wdio config/local/suite.conf.js",
+        "test-saucelabs-dev": "wdio config/local/localDev.saucelabs.conf.js",
+        "test-saucelabs": "wdio config/local/suite.saucelabs.conf.js"
     },
     "keywords": [
         "test",
