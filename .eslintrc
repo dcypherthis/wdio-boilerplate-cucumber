@@ -1,11 +1,20 @@
 {
-    rules: {
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
         "prefer-reflect": [0],
         "no-warning-comments": [0],
         "arrow-body-style": [0],
         "new-cap": [0],
         "no-unused-vars": [0],
         "no-undef": [0],
-        "key-spacing": [0]
+        "key-spacing": [0],
+        "no-arrow-condition": [0],
+        "space-after-keywords": [0],
+        "space-before-keywords": [0],
+        "keyword-spacing": [1],
+        "camelcase": [0]
     }
 }
