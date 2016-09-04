@@ -8,10 +8,10 @@
     },
     "main": "wdio.conf.js",
     "scripts": {
-        "postinstall": "selenium-standalone install",
         "cucumber": "cucumberjs test/features/ -r test/stepDefinitions",
         "lint": "eslint ./*",
         "selenium": "selenium-standalone start",
+        "selenium-install": "selenium-standalone install",
         "test": "wdio config/ci/travis.conf.js",
         "test-local-dev": "wdio config/local/localDev.conf.js",
         "test-local": "wdio config/local/suite.conf.js",
