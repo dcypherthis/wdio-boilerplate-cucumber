@@ -9,7 +9,6 @@
     "main": "wdio.conf.js",
     "scripts": {
         "postinstall": "node_modules/.bin/selenium-standalone install",
-        "build": "babel pages/src --presets babel-preset-es2015 --out-dir dist",
         "cucumber": "cucumberjs test/features/ -r test/stepDefinitions",
         "lint": "eslint ./*",
         "selenium": "node_modules/.bin/selenium-standalone start",
