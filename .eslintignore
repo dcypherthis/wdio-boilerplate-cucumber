@@ -1,0 +1,6 @@
+node_modules/
+npm-debug.log
+LICENSE-MIT
+changelog.md
+package.json
+readme.md

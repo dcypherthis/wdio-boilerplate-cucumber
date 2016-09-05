@@ -1,8 +1,24 @@
+import BaseUiMap from '../uiMaps/base.uiMap';
+
+let _elements;
+
 export default class BasePage {
+
+    constructor() {
+        super();
+        _elements = new BaseUiMap();
+    }
+
+    findBaseElement(target) {
+        switch (target) {
+            case 'Fork Me On Github':
+                return _elements.imgForkMeOnGithub;
+            default: throw Error(`The Element ${target} is not defined in base.page.js`);
+        }
+    }
 
     /**
      * Waits for a selector to be visible and then clicks on it
-     *
      * @param {String} action - The action being performed
      * @returns {void}
      */
