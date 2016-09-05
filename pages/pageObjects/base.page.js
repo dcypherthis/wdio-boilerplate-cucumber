@@ -1,6 +1,3 @@
-const _text = require('../utilities/text.util');
-
-
 export default class BasePage {
 
     /**
@@ -10,17 +7,17 @@ export default class BasePage {
      * @returns {void}
      */
     waitAndClick(action) {
-        const selector = this.findSelector(action);
+        const selector = this.findElement(action);
         browser.waitForVisible(selector, this.findTimeout(action));
         browser.click(selector);
     }
 
     checkVisibility(target) {
-        return browser.isVisible(this.findSelector(target));
+        return browser.isVisible(this.findElement(target));
     }
 
     hoverOver(action) {
-        const selector = this.findSelector(action);
+        const selector = this.findElement(action);
         browser.waitForVisible(selector);
         browser.moveToObject(selector);
     }
@@ -45,7 +42,7 @@ export default class BasePage {
     }
 
     elementIsOnPage(element) {
-        const selector = this.findSelector(element);
+        const selector = this.findElement(element);
         browser.waitUntil(() => {
             if (browser.elements(selector)) {
                 return true;
@@ -57,7 +54,7 @@ export default class BasePage {
     }
 
     getStyleAttribute(element, property) {
-        return browser.getCssProperty(this.findSelector(element), property).parsed.string;
+        return browser.getCssProperty(this.findElement(element), property).parsed.string;
     }
 
     /**
