@@ -1,52 +1,52 @@
 {
-    "name": "wdio-boilerplate-cucumber",
-    "version": "2.0.3",
-    "description": "Everything you need to get started with selenium tests in node.js.",
-    "repository": {
+  "name": "wdio-boilerplate-cucumber",
+  "version": "2.0.3",
+  "description": "Everything you need to get started with selenium tests in node.js.",
+  "repository": {
     "type": "git",
     "url": "https://github.com/dcypherthis/wdio-boilerplate-cucumber.git"
-    },
-    "main": "wdio.conf.js",
-    "scripts": {
-        "cucumber": "cucumberjs test/features/ -r test/stepDefinitions",
-        "lint": "eslint ./*",
-        "selenium": "selenium-standalone start",
-        "selenium-install": "selenium-standalone install",
-        "test": "wdio config/ci/travis.conf.js",
-        "test-local-dev": "wdio config/local/localDev.conf.js",
-        "test-local": "wdio config/local/suite.conf.js",
-        "test-saucelabs-dev": "wdio config/local/localDev.saucelabs.conf.js",
-        "test-saucelabs": "wdio config/local/suite.saucelabs.conf.js"
-    },
-    "keywords": [
-        "test",
-        "automation",
-        "selenium",
-        "cucumber",
-        "webdriver",
-        "webdriverIO"
-    ],
-    "author": "Josh Cypher <joshua.cypher@me.com>",
-    "license": "MIT",
-    "dependencies": {
-        "babel-preset-es2015": "6.14.0",
-        "babel-register": "^6.14.0",
-        "chai": "3.5.0",
-        "cucumber": "^1.2.2",
-        "deepmerge": "^0.2.10",
-        "node-uuid": "^1.4.7",
-        "request": "^2.74.0",
-        "wdio-cucumber-framework": "0.2.4",
-        "wdio-dot-reporter": "0.0.6",
-        "wdio-json-reporter": "0.0.4",
-        "wdio-junit-reporter": "^0.1.0",
-        "wdio-sauce-service": "^0.2.4",
-        "wdio-spec-reporter": "0.0.3",
-        "webdriverio": "^4.2.11"
-    },
-    "devDependencies": {
-        "eslint": "^3.4.0",
-        "eslint-plugin-react": "^6.2.0",
-        "selenium-standalone": "^5.5.0"
-    }
+  },
+  "main": "wdio.conf.js",
+  "scripts": {
+    "cucumber": "cucumberjs test/features/ -r test/stepDefinitions",
+    "lint": "eslint ./*",
+    "selenium": "selenium-standalone start",
+    "selenium-install": "selenium-standalone install",
+    "test": "wdio config/ci/travis.conf.js",
+    "test-local-dev": "wdio config/local/localDev.conf.js",
+    "test-local": "wdio config/local/suite.conf.js",
+    "test-saucelabs-dev": "wdio config/local/localDev.saucelabs.conf.js",
+    "test-saucelabs": "wdio config/local/suite.saucelabs.conf.js"
+  },
+  "keywords": [
+    "test",
+    "automation",
+    "selenium",
+    "cucumber",
+    "webdriver",
+    "webdriverIO"
+  ],
+  "author": "Josh Cypher <joshua.cypher@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "6.14.0",
+    "babel-register": "^6.14.0",
+    "chai": "3.5.0",
+    "cucumber": "^1.2.0",
+    "deepmerge": "^0.2.10",
+    "node-uuid": "^1.4.7",
+    "request": "^2.74.0",
+    "wdio-cucumber-framework": "0.2.4",
+    "wdio-dot-reporter": "0.0.6",
+    "wdio-json-reporter": "0.0.4",
+    "wdio-junit-reporter": "^0.1.0",
+    "wdio-sauce-service": "^0.2.4",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "^4.2.11"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-plugin-react": "^6.2.0",
+    "selenium-standalone": "^5.5.0"
+  }
 }
