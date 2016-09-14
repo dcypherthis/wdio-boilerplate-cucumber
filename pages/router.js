@@ -1,10 +1,10 @@
-import __page from './index';
+import pages from './index';
 let page, currentUrl;
 
 /**
  * Route class handles context driven decisions for the test suite.
  */
-export default class router {
+export default class Router {
 
     /**
      * Uses if/else logic with regular expressions to determine the current page base on matching parts of the current
@@ -16,7 +16,7 @@ export default class router {
     getContext() {
         currentUrl = browser.getUrl();
         if (currentUrl.match(/https?:\/\/home.*\.example.net\//)) {
-            page = new _page.Home();
+            page = new pages.HomePage();
         } else {
             throw Error(`The url ${currentUrl} does not match any pages defined in the router.js file`, console.trace()); // eslint-disable-line no-console
         }
@@ -34,10 +34,10 @@ export default class router {
         this.page = page;
         switch (targetPage) {
             case 'home':
-                page = new _page.Home();
+                page = new pages.HomePage();
                 break;
             case 'about':
-                page = new _page.About();
+                page = new pages.About();
                 break;
             default:
                 throw Error(`The ${targetPage} page is not defined as a valid case in router.setContext(targetPage)`);

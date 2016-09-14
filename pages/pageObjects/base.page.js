@@ -1,13 +1,13 @@
-import BaseUiMap from '../uiMaps/base.uiMap';
+import BaseUiMap from '../index';
 
 let _elements;
 
 export default class BasePage {
 
-    constructor() {
-        super();
-        _elements = new BaseUiMap();
-    }
+    // constructor() {
+    //     super();
+    //     _elements = new BaseUiMap();
+    // }
 
     findBaseElement(target) {
         switch (target) {

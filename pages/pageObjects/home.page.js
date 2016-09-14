@@ -1,5 +1,5 @@
-import BasePage from '../index'
-import HomeUiMap from '../index';
+import BasePage from './base.page';
+import HomeUiMap from '../uiMaps/home.uiMap';
 
 let _elements;
 
