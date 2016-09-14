@@ -2,7 +2,7 @@ import pages from './index';
 let page, currentUrl;
 
 /**
- * Route class handles context driven decisions for the test suite.
+ * A Router class that handles context driven decisions for the test suite.
  */
 export default class Router {
 
