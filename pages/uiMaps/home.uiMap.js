@@ -31,15 +31,15 @@ export default class UiMap {
     }
 
     get aDropdown() {
-        return '#content > ul > li:nth-child(1) > a';
+        return '#content > ul > li:nth-child(9) > a';
     }
 
     get aDynamicControls() {
-        return '#content > ul > li:nth-child(1) > a';
+        return '#content > ul > li:nth-child(11) > a';
     }
 
     get aDynamicLoading() {
-        return '#content > ul > li:nth-child(1) > a';
+        return '#content > ul > li:nth-child(12) > a';
     }
 
     /* External Links */

@@ -1,0 +1,31 @@
+import BasePage from './base.page';
+import ABTestUiMap from '../uiMaps/aBTest.uiMap';
+
+let _elements;
+
+export default class ABTestPage extends BasePage {
+
+    /* Default Functions */
+
+    constructor() {
+        super();
+        _elements = new ABTestUiMap();
+    }
+
+    getPageUrl() {
+        return _elements.url;
+    }
+
+    pageLoadIndicator() {
+        return _elements.heading;
+    }
+
+    findElement(target) {
+        switch (target) {
+            // case 'A/B Testing' :
+            //     return _elements.aABTesting;
+            default: throw Error(`The element ${target} is not defined in home.page.js`);
+        }
+    };
+
+}

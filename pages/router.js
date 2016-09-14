@@ -15,8 +15,18 @@ export default class Router {
      */
     getContext() {
         currentUrl = browser.getUrl();
-        if (currentUrl.match(/https?:\/\/home.*\.example.net\//)) {
+        if (currentUrl.match(/https?:\/\/the-internet.*\.herokuapp.com\//)) {
             page = new pages.HomePage();
+        } else if (currentUrl.match(/abtest/)) {
+            page = new pages.ABTestingPage();
+        } else if (currentUrl.match(/broken_images/)) {
+            page = new pages.BrokenImagesPage();
+        } else if (currentUrl.match(/dropdown/)) {
+            page = new pages.DropdownPage();
+        } else if (currentUrl.match(/dynamic_controls/)) {
+            page = new pages.DynamicControlsPage();
+        } else if (currentUrl.match(/dynamic_loading\/?/)) {
+            page = new pages.DynamicLoadingPage();
         } else {
             throw Error(`The url ${currentUrl} does not match any pages defined in the router.js file`, console.trace()); // eslint-disable-line no-console
         }
@@ -36,8 +46,20 @@ export default class Router {
             case 'home':
                 page = new pages.HomePage();
                 break;
-            case 'about':
-                page = new pages.About();
+            case 'A/B Testing':
+                page = new pages.ABTestingPage();
+                break;
+            case 'Broken Images':
+                page = new pages.BrokenImagesPage();
+                break;
+            case 'Dropdown':
+                page = new pages.DropdownPage();
+                break;
+            case 'Dynamic Controls':
+                page = new pages.DynamicControlsPage();
+                break;
+            case 'Dynamic Loading':
+                page = new pages.DynamicLoadingPage();
                 break;
             default:
                 throw Error(`The ${targetPage} page is not defined as a valid case in router.setContext(targetPage)`);

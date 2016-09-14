@@ -31,4 +31,4 @@ Feature: Navigating to all the pages::
     Scenario: Navigating to /dynamic_loading
 
         When I click "Dynamic Loading"
-        Then I should be on the "Dynamic loading" page
+        Then I should be on the "Dynamic Loading" page
