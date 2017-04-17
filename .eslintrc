@@ -1,9 +1,13 @@
 {
+    "plugins": [
+        "prettier"
+    ],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
     "rules": {
+        "prettier/prettier": "error",
         "prefer-reflect": [0],
         "no-warning-comments": [0],
         "arrow-body-style": [0],

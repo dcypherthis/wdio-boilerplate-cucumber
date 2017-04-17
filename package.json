@@ -16,7 +16,14 @@
     "test-local-dev": "wdio config/local/localDev.conf.js",
     "test-local": "wdio config/local/suite.conf.js",
     "test-saucelabs-dev": "wdio config/local/localDev.saucelabs.conf.js",
-    "test-saucelabs": "wdio config/local/suite.saucelabs.conf.js"
+    "test-saucelabs": "wdio config/local/suite.saucelabs.conf.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "keywords": [
     "test",
@@ -47,7 +54,10 @@
   "devDependencies": {
     "eslint": "^3.4.0",
     "eslint-config-prettier": "^1.6.0",
+    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^6.2.0",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
     "prettier": "^1.1.0",
     "selenium-standalone": "^6.2.0"
   }
