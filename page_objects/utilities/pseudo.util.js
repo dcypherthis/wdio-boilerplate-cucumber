@@ -5,8 +5,8 @@
  * @returns {String} baseSelector:active
  */
 exports.makeActive = baseSelector => {
-    const activeState = ':active';
-    return baseSelector + activeState;
+  const activeState = ":active";
+  return baseSelector + activeState;
 };
 
 /**
@@ -16,8 +16,8 @@ exports.makeActive = baseSelector => {
  * @returns {String} baseSelector:hover
  */
 exports.makeHover = baseSelector => {
-    const hoverState = ':hover';
-    return baseSelector + hoverState;
+  const hoverState = ":hover";
+  return baseSelector + hoverState;
 };
 
 /**
@@ -27,8 +27,8 @@ exports.makeHover = baseSelector => {
  * @returns {String} baseSelector:focus
  */
 exports.makeFocus = baseSelector => {
-    const focusState = ':focus';
-    return baseSelector + focusState;
+  const focusState = ":focus";
+  return baseSelector + focusState;
 };
 
 /**
@@ -38,6 +38,6 @@ exports.makeFocus = baseSelector => {
  * @returns {String} baseSelector:visited
  */
 exports.makeVisited = baseSelector => {
-    const visitedState = ':visited';
-    return baseSelector + visitedState;
+  const visitedState = ":visited";
+  return baseSelector + visitedState;
 };

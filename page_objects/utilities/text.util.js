@@ -1,4 +1,4 @@
-const _time = require('./dateTime.util');
+const _time = require("./dateTime.util");
 const currentTime = _time.getFormattedTime();
 
 /**
@@ -6,12 +6,12 @@ const currentTime = _time.getFormattedTime();
  * @returns {string} Unique session data identifier
  */
 const formatSessionData = () => {
-    const sessionData = browser.session('get');
-    const sessionId = sessionData.sessionId;
-    const browserName = sessionData.value.browserName;
-    const browserVersion = sessionData.value.version;
-    const platform = sessionData.value.platform;
-    return `${platform} ${browserName} ${browserVersion} ${sessionId}`;
+  const sessionData = browser.session("get");
+  const sessionId = sessionData.sessionId;
+  const browserName = sessionData.value.browserName;
+  const browserVersion = sessionData.value.version;
+  const platform = sessionData.value.platform;
+  return `${platform} ${browserName} ${browserVersion} ${sessionId}`;
 };
 
 /**
@@ -21,7 +21,7 @@ const formatSessionData = () => {
  * @returns {String} Unique mailing name appended with time and session data
  */
 const getUniqueName = identifier => {
-    return `${identifier} - ${currentTime} - ${formatSessionData()}`;
+  return `${identifier} - ${currentTime} - ${formatSessionData()}`;
 };
 
 /**
@@ -29,5 +29,5 @@ const getUniqueName = identifier => {
  * @returns {string} Unique session data identifier
  */
 exports.getSessionData = () => {
-    return formatSessionData();
+  return formatSessionData();
 };
