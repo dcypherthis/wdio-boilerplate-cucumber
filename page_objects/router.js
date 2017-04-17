@@ -17,6 +17,8 @@ export default class Router {
         currentUrl = browser.getUrl();
         if (currentUrl.match(/https?:\/\/the-internet.*\.herokuapp.com\//)) {
             page = new pages.HomePage();
+        } else if (currentUrl.match(/palindrome/)) {
+            page = new pages.PalindromePage();
         } else if (currentUrl.match(/abtest/)) {
             page = new pages.ABTestingPage();
         } else if (currentUrl.match(/broken_images/)) {
@@ -43,6 +45,9 @@ export default class Router {
     setContext(targetPage) {
         this.page = page;
         switch (targetPage) {
+            case 'palindrome':
+                page = new pages.PalindromePage();
+                break;
             case 'home':
                 page = new pages.HomePage();
                 break;

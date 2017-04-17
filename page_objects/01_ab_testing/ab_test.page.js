@@ -1,15 +1,15 @@
-import BasePage from './base.page';
-import DropdownUiMap from '../uiMaps/dropdown.uiMap';
+import BasePage from '../00_base/base.page';
+import ABTestUiMap from './aBTest.uiMap';
 
 let _elements;
 
-export default class DropdownPage extends BasePage {
+export default class ABTestPage extends BasePage {
 
     /* Default Functions */
 
     constructor() {
         super();
-        _elements = new DropdownUiMap();
+        _elements = new ABTestUiMap();
     }
 
     getPageUrl() {

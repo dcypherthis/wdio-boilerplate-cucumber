@@ -1,15 +1,15 @@
-import BasePage from './base.page';
-import ABTestUiMap from '../uiMaps/aBTest.uiMap';
+import BasePage from '../00_base/base.page';
+import BrokenImagesUiMap from './brokenImages.uiMap';
 
 let _elements;
 
-export default class ABTestPage extends BasePage {
+export default class BrokenImagesPage extends BasePage {
 
     /* Default Functions */
 
     constructor() {
         super();
-        _elements = new ABTestUiMap();
+        _elements = new BrokenImagesUiMap();
     }
 
     getPageUrl() {

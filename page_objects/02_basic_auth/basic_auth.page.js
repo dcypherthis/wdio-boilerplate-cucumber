@@ -1,15 +1,15 @@
-import BasePage from './base.page';
-import DynamicLoadingUiMap from '../uiMaps/dynamicLoading.uiMap';
+import BasePage from '../00_base/base.page';
+import ABTestUiMap from '../01_ab_testing/aBTest.uiMap';
 
 let _elements;
 
-export default class DynamicLoadingPage extends BasePage {
+export default class Basic_Auth_Page extends BasePage {
 
     /* Default Functions */
 
     constructor() {
         super();
-        _elements = new DynamicLoadingUiMap();
+        _elements = new Basic_Auth_UiMap();
     }
 
     getPageUrl() {

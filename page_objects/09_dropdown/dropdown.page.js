@@ -1,15 +1,15 @@
-import BasePage from './base.page';
-import BrokenImagesUiMap from '../uiMaps/brokenImages.uiMap';
+import BasePage from '../00_base/base.page';
+import DropdownUiMap from './dropdown.uiMap';
 
 let _elements;
 
-export default class BrokenImagesPage extends BasePage {
+export default class DropdownPage extends BasePage {
 
     /* Default Functions */
 
     constructor() {
         super();
-        _elements = new BrokenImagesUiMap();
+        _elements = new DropdownUiMap();
     }
 
     getPageUrl() {

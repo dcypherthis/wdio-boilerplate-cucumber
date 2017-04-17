@@ -1,15 +1,15 @@
-import BasePage from './base.page';
-import HomeUiMap from '../uiMaps/home.uiMap';
+import Base_Page from '../00_base/base.page';
+import UiMap from './home.uiMap';
 
 let _elements;
 
-export default class HomePage extends BasePage {
+export default class HomePage extends Base_Page {
 
     /* Default Functions */
 
     constructor() {
         super();
-        _elements = new HomeUiMap();
+        _elements = new UiMap();
     }
 
     getPageUrl() {

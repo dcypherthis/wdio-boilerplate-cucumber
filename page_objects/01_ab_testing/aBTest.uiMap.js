@@ -14,7 +14,7 @@ export default class ABTestUiMap {
 
     /* Header */
     get heading() {
-        return '#content > div > h3';
+        return 'NOPE';
     }
 
     /* External Links */
