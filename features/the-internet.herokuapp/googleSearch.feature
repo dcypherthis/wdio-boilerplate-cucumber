@@ -6,12 +6,7 @@ Feature: Navigating to all the pages::
 
     Background: Start on the the palindrome page
 
-        Given I am on the "palindrome" page
-
-    Scenario: Navigating to '/palindrome'
-        When I enter "bob" for the "Palindrome Input" input
-        And  I click "Submit"
-        Then I should see "yes"
+        Given I am on the "home" page
 
 #    Scenario: Navigating to /broken_images
 #

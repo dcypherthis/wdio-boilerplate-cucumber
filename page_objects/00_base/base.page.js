@@ -74,7 +74,7 @@ export default class BasePage {
     }
 
     /**
-     * Get the current title from Selenium and compare it to the title in the uimap.  Waits until they both are the
+     * Get the current title from Selenium and compare it to the title in the uiMap.  Waits until they both are the
      * same before returning a boolean, otherwise it throws a timeout exception.
      * @returns {bool} Returns true if the page title is correct
      */

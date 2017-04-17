@@ -29,24 +29,26 @@
   "author": "Josh Cypher <joshua.cypher@me.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-preset-es2015": "6.14.0",
-    "babel-register": "^6.14.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-register": "^6.24.1",
     "chai": "3.5.0",
-    "cucumber": "^1.2.0",
-    "deepmerge": "^0.2.10",
+    "cucumber": "^2.0.0-rc.9",
+    "deepmerge": "^1.3.2",
     "node-uuid": "^1.4.7",
     "request": "^2.74.0",
-    "wdio-cucumber-framework": "0.2.4",
-    "wdio-dot-reporter": "0.0.6",
-    "wdio-json-reporter": "0.0.4",
-    "wdio-junit-reporter": "^0.1.0",
-    "wdio-sauce-service": "^0.2.4",
-    "wdio-spec-reporter": "0.0.3",
+    "wdio-cucumber-framework": "0.2.16",
+    "wdio-dot-reporter": "0.0.8",
+    "wdio-json-reporter": "0.2.1",
+    "wdio-junit-reporter": "^0.3.0",
+    "wdio-sauce-service": "^0.3.1",
+    "wdio-spec-reporter": "0.1.0",
     "webdriverio": "^4.2.11"
   },
   "devDependencies": {
     "eslint": "^3.4.0",
+    "eslint-config-prettier": "^1.6.0",
     "eslint-plugin-react": "^6.2.0",
-    "selenium-standalone": "^5.5.0"
+    "prettier": "^1.1.0",
+    "selenium-standalone": "^6.2.0"
   }
 }

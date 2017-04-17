@@ -1,7 +1,7 @@
 /**
  * A base UiMap that is inherited by
  */
-export default class BaseUiMap {
+export default class uiMap {
 
     // get elementName() {
     //     return 'selector'
