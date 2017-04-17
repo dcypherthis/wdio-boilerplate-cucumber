@@ -64,9 +64,6 @@ const ciConf = {
     junit: {
       outputDir: "./reports/junit/"
     }
-  },
-  cucumberOpts: {
-    require: ["./stepDefinitions/"]
   }
 };
 exports.config = merge(masterConf.config, ciConf);

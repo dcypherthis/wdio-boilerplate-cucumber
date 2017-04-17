@@ -16,6 +16,7 @@ exports.config = {
   connectionRetryCount: 3,
   framework: "cucumber",
   cucumberOpts: {
+    require: ["./step_definitions/"],
     backtrace: true, // <boolean> show full backtrace for errors
     compiler: [], // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
     dryRun: false, // <boolean> invoke formatters without executing steps
